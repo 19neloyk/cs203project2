@@ -1,0 +1,1071 @@
+Outback
+Philadelphia
+Steak
+Monday 11:00 17:00, Friday 11:00 17:00, Saturday 11:00 23:00, Sunday 11:00 23:00
+$$
+3.5
+20
+
+Bertucci
+Pittsburgh
+Italian
+Monday 13:00 21:00, Tuesday 13:00 21:00, Friday 11:00 21:00, Saturday 11:00 23:00, Sunday 11:00 23:00
+$$
+4.2
+35
+
+Chipotle
+Chester
+Mexican
+Monday 11:00 21:00, Wednesday 14:00 19:00, Friday 11:00 21:00, Saturday 11:00 22:00, Sunday 11:00 21:00
+$
+2.9
+89
+
+Godmothers
+Cape May
+Italian
+Monday 13:00 21:00, Wednesday 13:00 21:00, Friday 13:00 21:00, Saturday 13:00 24:00, Sunday 13:00 24:00
+$$$
+2.0
+15
+
+Panicos
+Cape May
+Greek
+Monday 11:00 21:00, Wednesday 02:00 19:00, Friday 11:00 9:00, Saturday 11:00 22:00, Sunday 11:00 22:00
+$$
+4.8
+60
+
+Sette Luna
+Easton
+Italian
+Monday 11:30 21:30, Tuesday 11:30 21:30, Wednesday 11:30 21:30, Thursday 11:30 21:30, Friday 11:30 22:30, Saturday 11:30 22:30, Sunday 10:30 21:00 
+$$
+4
+360
+
+Daddy's Place
+Easton
+Mediterranean
+Tuesday 11:00 21:00, Wednesday 11:00 21:00, Thursday 11:00 21:00, Friday 11:00 21:00, Saturday 11:00 21:00, Tuesday 11:00 21:00, Sunday 13:00 20:00
+$
+4.5
+244
+
+Trolley Stop
+Easton
+Comfort, Diner
+Monday 7:00 22:00, Tuesday 7:00 22:00, Wednesday 7:00 22:00, Thursday 7:00 22:00, Friday 7:00 22:00, Saturday 7:30 11:00, Sunday 7:00 22:00
+$
+4
+13
+
+Kubel's Too
+Long Beach
+American
+Monday 11:00 20:00, Tuesday 11:00 20:00, Wednesday 11:00 20:00, Thursday 11:00 20:00, Friday 11:00 21:00, Saturday 8:00 21:00, Sunday 8:00 20:00
+$$
+3.5
+84
+
+The Chicken or the Egg
+Beach Haven
+Breakfast
+Monday 11:00 20:00, Tuesday 11:00 20:00, Wednesday 11:00 20:00, Thursday 11:00 20:00, Friday 11:00 21:00, Saturday 8:00 21:00, Sunday 8:00 20:00
+$
+4.5
+995
+
+The Pantry
+Santa Fe
+New Mexican, Breakfast
+Monday 6:30 20:30, Tuesday 6:30 20:30, Wednesday 6:30 20:30, Thursday 6:30 20:30, Friday 6:30 20:30
+$$
+4.6
+2281
+
+Alexander's Breakfast Bonanza
+Easton
+Breakfast
+Monday 7:00 12:00, Tuesday 7:00 12:00, Wednesday 7:00 12:00, Thursday 7:00 12:00, Friday 9:00 12:00 
+$
+4.5
+945
+
+Coyote Cafe
+Santa Fe
+New Mexican, Dinner
+Monday 11:30 23:59, Tuesday 11:30 23:59, Wednesday 11:30 23:59, Thursday 11:30 23:59, Friday 11:30 23:59, Saturday 11:30 23:59, Sunday 11:30 23:59
+$$$
+4.7
+543
+
+The Fudge Facade
+Pheonix
+Dessert
+Saturday 9:00 14:45, Sunday 10:00 17:30
+$$$
+2.1
+3252
+
+Pub FAF
+Nykarleby
+Pub, Dinner
+Wednesday 16:00 23:00, Thursday 16:00 23:00, Friday 16:00 11:59, Saturday 16:00 11:59
+$$
+3.7
+236
+
+Sumo
+Lahore
+Japanese, Thai, Fine Dining
+Monday 14:00 22:00, Tuesday 14:00 22:00, Wednesday 14:00 22:00, Thursday 14:00 22:00, Friday 14:00 22:00, Saturday 14:00 22:00, Sunday 14:00 22:00
+$$$
+4.5
+567
+
+Chipotle
+New York
+Mexican, Fast Food
+Tuesday 10:45 21:00, Wednesday 10:45 21:00, Thursday 10:45 21:00, Friday 10:45 21:00, Saturday 10:45 21:00, Sunday 10:45 19:00
+$
+4.0
+302
+
+Spice Bazaar
+Islamabad
+Desi, Spicy, BBQ
+Monday 14:00 21:00, Tuesday 14:00 21:00, Wednesday 14:00 21:00, Thursday 14:00 21:00, Friday 14:00 21:00, Saturday 14:00 23:00, Sunday 14:00 23:00
+$$
+4.0
+406
+
+Amans
+Easton
+Indian, Spicy, Fine Dining
+Tuesday 2:00 21:30, Wednesday 2:00 21:30, Thursday 2:00 21:30, Friday 2:00 21:30, Saturday 2:00 21:30, Sunday 2:00 21:30
+$$
+3.5
+256
+
+3rd Ferry
+Easton
+Sea Food, Bar
+Tuesday 2:00 22:00, Wednesday 2:00 22:00, Thursday 2:00 22:00, Friday 2:00 22:00, Saturday 2:00 22:00, Sunday 2:00 22:00
+$$
+3.5
+126
+
+Stoke Pizzaria
+Easton
+Pizza, American
+Monday 10:00 23:00, Tuesday 10:00 23:00, Wednesday 10:00 23:00, Thursday 10:00 23:00, Friday 10:00 23:00, Saturday 10:00 23:00
+$$
+4.8
+76
+
+Charlie's Hot Dogs
+Nazareth
+American
+Monday 10:00 22:00, Tuesday 10:00 22:00, Wednesday 10:00 22:00, Thursday 10:00 22:00, Friday 10:00 22:00
+$
+4.9
+136
+
+Greg's Italian Cuisine
+Long Island City
+Italian
+Monday 11:00 24:00, Tuesday 11:00 24:00, Wednesday 11:00 24:00, Thursday 11:00 24:00, Friday 11:00 24:00, Saturday 12:00 23:00
+$$$
+3.9
+1234
+
+Brady's Brunch
+Bethlehem
+Breakfast
+Monday 6:00 14:00, Tuesday 6:00 14:00, Wednesday 6:00 14:00, Thursday 6:00 14:00, Friday 6:00 14:00, Saturday 6:00 14:00
+$
+4.2
+576
+
+Danny's Dumpster
+Bethlehem
+German
+Monday 6:00 24:00, Tuesday 6:00 24:00, Wednesday 6:00 24:00, Thursday 6:00 24:00, Friday 6:00 24:00, Saturday 6:00 24:00, Sunday 6:00 24:00
+$
+1.2
+3
+
+Tiger Sugar
+Cambridge
+cafe, Taiwanese, bubble tea
+Sunday 12:00 23:00, Tuesday 11:00 22:30, Wednesday 11:00 22:30, Thursday 11:00 22:30, Friday 11:00 22:30
+$$
+4.2
+184
+
+Dynasty
+Hopkinton
+Chinese
+Sunday 11:00 21:00, Wednesday 10:00 21:30, Thursday 10:00 21:30, Friday 10:00 21:30, Saturday 11:00 23:00
+$
+3.1
+73
+
+Sunnyside
+Ashland
+American, breakfast
+Sunday 08:00 14:00, Monday 06:00 14:00, Tuesday 06:00 14:00, Wednesday 06:00 14:00, Thursday 06:00 14:00, Friday 06:00 14:00
+$
+2.8
+23
+
+Il Vecchio
+Pacific Grove
+Italian
+Sunday 17:00 22:00, Wednesday 16:00 22:00, Friday 16:00 22:00, Saturday 16:00 22:00
+$$$
+4.7
+836
+
+85C Bakery Cafe
+San Jose
+bakery, cafe, Taiwanese
+Sunday 07:00 16:00, Monday 07:00 16:00, Tuesday 07:00 16:00, Wedensday 07:00 16:00, Thursday 07:00 16:00, Friday 07:00 16:00, Saturday 07:00 16:00
+$
+4.6
+755
+
+The Beltway Diner
+Hazleton
+Diner
+Monday 8:00 20:00, Tuesday 8:00 20:00, Wednesday 8:00 20:00, Thursday 8:00 20:00, Friday 8:00 20:00, Saturday 9:00 20:00, Sunday 10:00 20:00
+$
+3.1
+7
+
+WcDonalds
+Tokyo
+Fast Food
+Monday 7:00 22:00, Tuesday 7:00 22:00, Wednesday 7:00 22:00, Thursday 7:00 22:00, Friday 7:00 22:00, Saturday 9:00 22:00, Sunday 90:00 22:00
+$
+5.0
+19
+
+The Garlic Knot
+Freeland
+Italian
+Monday 11:30 20:00, Tuesday 11:30 20:00, Wednesday 11:30 20:00, Thursday 11:30 20:00, Friday 11:30 20:00
+$
+3.6
+48
+
+Red Leaf
+Wilkesbarre
+Salad
+Monday 11:00 16:00, Tuesday 11:00 16:00, Wednesday 11:00 18:00, Thursday 11:00 16:00, Friday 11:00 16:00, Saturday 10:00 15:00
+$$
+4.6
+34
+
+La Tolteca
+Wilkesbarre
+Mexican
+Monday 11:00 20:00, Tuesday 11:00 20:00, Wednesday 11:00 20:00, Thursday 11:00 20:00, Friday 11:00 20:00
+$$
+2.3
+21
+
+Femboy Hooters
+Easton
+Diner
+Sunday 17:00 23:00, Friday 17:00 23:00, Saturday 17:00 23:00
+$
+5.0
+69
+
+Goth iHop
+Springfield
+Breakfast
+Sunday 7:00 14:00, Monday 7:00 14:00, Tuesday 7:00 14:00, Wednesday 7:00 14:00, Thursday 7:00 14:00, Friday 7:00 14:00, Saturday 7:00 14:00, Sunday 7:00 14:00
+$
+4.6
+420
+
+Georg's Smorgasbord
+Sandtown
+Family, Special Occasions, German
+Monday 12:00 21:00, Tuesday 12:00 21:00, Wednesday 12:00 21:00, Thursday 12:00 21:00, Friday 12:00 21:00
+$$$
+4.0
+2
+
+Steve's Shed
+Paris
+Sketchy
+Wednesday 0:00 24:00
+$$$
+0.0
+0
+
+The Sewer
+Paris
+Rat-Owned, Anyone Can Cook
+Monday 12:00 21:00, Tuesday 12:00 21:00, Wednesday 12:00 21:00, Thursday 12:00 21:00, Friday 12:00 21:00
+$$
+4.9
+333
+
+Angelinos
+Philadelphia
+Italian
+Monday 11:00 21:30, Tuesday 11:00 21:30, Wednesday 11:00 21:30, Thursday 11:00 21:30, Friday 11:00 21:30, Saturday 11:00 21:30
+$$
+2.5
+36
+
+Grillby's
+Snowdin
+Pub
+Monday 17:00 23:00, Tuesday 17:00 23:00, Wednesday 17:00 23:00, Thursday 17:00 23:00, Friday 17:00 23:00, Saturday 17:00 23:00, Sunday 17:00 23:00
+$
+3.5
+8
+
+The Snuggly Duckling
+Corona
+Pub
+Monday 17:00 23:00, Tuesday 17:00 23:00, Wednesday 17:00 23:00, Thursday 17:00 23:00, Friday 17:00 23:00, Saturday 17:00 23:00, Sunday 17:00 23:00
+$
+4.0
+12
+
+The Sugar Bowl
+Elwood City
+Dessert Parlor
+Monday 11:00 21:30, Tuesday 11:00 21:30, Wednesday 11:00 21:30, Thursday 11:00 21:30, Friday 11:00 21:30, Saturday 11:00 21:30
+$
+4.1
+42
+
+Angel's Share
+Mondstadt
+Tavern
+Monday 17:00 23:00, Tuesday 17:00 23:00, Wednesday 17:00 23:00, Thursday 17:00 23:00, Friday 17:00 23:00, Saturday 17:00 23:00, Sunday 17:00 23:00
+$
+3.7
+213
+
+Henry's place
+Eastwood
+Pizza
+Monday 11:00 23:00, Tuesday 11:00 23:00, Wednesday 11:00 23:00, Thursday 11:00 23:00, Friday 11:00 23:00, Saturday 10:00 23:00, Sunday 12:00 18:00 
+$
+3.7
+103
+
+Med Express
+Babylon
+Mediterranean
+Monday 1:00 21:00, Tuesday 1:00 21:00, Wednesday 1:00 21:00, Thursday 1:00 21:00, Friday 1:00 22:00, Saturday 1:00 22:00
+$$
+4.6
+205
+
+GreekGo
+Brentwood
+Greek
+Monday 08:00 15:00, Tuesday 08:00 15:00, Wednesday 08:00 15:00, Thursday 08:00 15:00, Friday 08:00 15:00, Saturday 08:00 17:00
+$
+4.0
+501
+
+Gilbo's
+Firstin
+Cafe, Vegetarian
+Monday 07:00 12:00, Tuesday 07:00 12:00, Wednesday 07:00 12:00, Thursday 07:00 12:00, Friday 07:00 12:00, Saturday 07:00 15:00
+$$
+4.3
+53
+
+Sam's Burgers
+East Islip
+Fast Food
+Monday 11:00 23:00, Tuesday 11:00 23:00, Wednesday 11:00 23:00, Thursday 11:00 23:00, Friday 11:00 23:00, Saturday 10:00 23:00, Sunday 12:00 18:00
+$
+3.5
+327
+
+South Ocean
+Flourtown
+Japanese, Chinese
+Tuesday 11:00 22:00, Wednesday 11:00 22:00, Thursday 11:00 22:00, Friday 11:00 22:00, Saturday 11:00 22:00, Sunday 11:00 22:00
+$
+4.8
+50
+
+Mr. P's
+Flourtown
+Pizza
+Monday 12:00 20:00, Tuesday 12:00 20:00, Wednesday 12:00 20:00, Thursday 12:00 20:00, Friday 12:00 22:00, Saturday 12:00 22:00, Sunday 12:00 6:00
+$
+2.3
+75
+
+El Limon
+Flourtown
+Mexican
+Monday 11:00 21:00, Tuesday 11:00 21:00, Wednesday 11:00 21:00, Thursday 11:00 21:00, Friday 11:00 21:00, Saturday 11:00 21:00
+$$
+4.5
+32
+
+Downtown Dawg
+Easton
+Hot Dogs
+Monday 11:00 22:00, Tuesday 11:00 22:00, Wednesday 11:00 22:00, Thursday 11:00 22:00, Friday 11:00 22:00, Saturday 11:00 22:00
+$
+5
+100
+
+Del Frisco's
+Philadelphia
+Steak
+Monday 15:00 22:00, Tuesday 15:00 22:00, Wednesday 15:00 22:00, Thursday 15:00 22:00, Friday 15:00 22:00, Saturday 15:00 22:00, Sunday 15:00 22:00
+$$$
+4.3
+250
+
+McDonalds
+Medfield
+American, Fast-Food
+Monday 8:00 24:00, Tuesday 8:00 24:00, Wednesday 8:00 24:00, Thursday 8:00 24:00, Friday 8:00 24:00, Saturday 8:00 24:00, Sunday 8:00 24:00
+$
+1.0	
+5	
+
+Taco Bell
+Walpole
+Mexican, Fast-Food
+Monday 8:00 24:00, Tuesday 8:00 23:00, Wednesday 8:00 23:00, Thursday 8:00 23:00, Friday 8:00 23:00, Saturday 8:00 23:00, Sunday 8:00 23:00
+$
+2.0
+3
+
+Panera Bread
+Phillipsburg
+bakery-cafe
+Monday 9:00 21:00, Tuesday 9:00 21:00, Wednesday 9:00 21:00, Thursday 9:00 21:00, Friday 9:00 21:00, Saturday 9:00 21:00, Sunday 9:00 21:00
+$$$
+1.0
+5
+
+Panda Express
+Walpole
+Chinese, Fast-Food
+Monday 10:00 23:00, Tuesday 10:00 23:00, Wednesday 10:00 23:00, Thursday 10:00 23:00, Friday 10:00 23:00, Saturday 10:00 23:00, Sunday 10:00 23:00
+$$
+5.0
+4
+
+Chic-fil-A
+Whitehall
+Fried-Chicken, Fast-Food
+Monday 8:00 24:00, Tuesday 8:00 24:00, Wednesday 8:00 24:00, Thursday 8:00 24:00, Friday 8:00 24:00, Saturday 8:00 24:00
+$$$
+3.0
+5
+
+Sheetz
+Harrisburg
+American
+Monday 10:00 23:00, Tuesday 10:00 23:00, Wednesday 10:00 23:00, Thursday 10:00 23:00
+$$
+3.7
+105
+
+Osaka
+Harrisburg
+Japanese
+Wednesday 10:00 23:00, Thursday 10:00 23:00, Friday 10:00 23:00, Saturday 10:00 23:00 
+$
+4.8
+500
+
+Santos Pizza
+Harrisburg
+Italian
+Friday 12:00 21:00, Saturday 12:00 21:00, Sunday 12:00 21:00
+$$
+4.6
+38
+
+Great Wall 
+Harrisburg
+Chinese
+Monday 8:00 22:00, Wednesday 8:00 22:00, Friday 8:00 22:00
+$
+4.3
+47
+
+Gabriellas
+Harrisburg
+Italian
+Saturday 3:00 23:00, Sunday 3:00 23:00
+$$$
+5.0
+172
+
+Kuma Ani
+Albany
+Sushi
+Monday 11:00 20:00, Tuesday 11:00 20:00, Wednesday 11:00 20:00, Thursday 11:00 20:00, Friday 11:00 20:00, Saturday 11:00 20:00
+$$
+4.8
+397
+
+Fountain Restaurant 
+Albany 
+Italian, Pizza
+Sunday 11:00 21:00, Tuesday 11:00 21:00, Wednesday 11:00 21:00, Thursday 11:00 21:00, Friday 11:00 22:00, Saturday 11:00 22:00
+$$
+3.2
+126
+
+Untouchable Nutrition 
+Albany
+Juice Bar
+Sunday 11:00 15:00, Monday 6:00 17:00, Tuesday 6:00 17:00, Wednesday 6:00 17:00, Thursday 6:00 17:00, Friday 6:00 17:00, Saturday 8:00 15:00
+$$$
+2.4
+5
+
+Brick House Bakery
+Cobleskill 
+Bakery
+Sunday 5:00 21:00, Monday 5:00 21:00, Tuesday 5:00 21:00, Wednesday 5:00 21:00, Thursday 5:00 21:00, Friday 5:00 21:00, Saturday 5:00 21:00
+$
+4.5
+83
+
+El Taco Shack
+Cobleskill
+Mexican
+Sunday 12:00 20:00, Monday 11:00 20:00, Tuesday 11:00 20:00, Wednesday 11:00 20:00, Thursday 11:00 20:00, Friday 11:00 21:00, Saturday 11:00 21:00
+$$
+4.2
+17
+
+Table
+Riyadh
+Middle Eastern, Spicy
+Monday 8:00 10:00, Tuesday 8:00 10:00, Wednesday 8:00 10:00, Thursday 8:00 10:00, Friday 8:00 10:00
+$$$
+4.2
+10
+
+Koko
+Easton
+Indian, Local
+Tuesday 8:00 10:00, Wednesday 8:00 10:00
+$$$
+3.9
+10
+
+Mkani
+Nouakchott
+African
+Friday 8:00 10:00
+$
+4.3
+20
+
+FoodMood
+New York
+American, Dinning
+Monday 8:00 10:00, Tuesday 8:00 10:00, Wednesday 8:00 10:00, Thursday 8:00 10:00, Friday 8:00 10:00
+$$
+4.1
+30
+
+SomeResau
+Cairo
+Egyptian, to-go
+Monday 8:00 10:00, Tuesday 8:00 10:00, Wednesday 8:00 10:00, Thursday 8:00 10:00, Friday 8:00 10:00
+$$$
+4.5
+1
+
+Stoke
+Easton 
+Italian 
+Monday 12:00 21:00, Tuesday 12:00 21:00, Wednesday 12:00 21:00, Thursday 12:00 21:00, Friday 12:00 22:00, Saturday 12:00 22:00, Sunday 12:00 21:00
+$$
+4.3
+858
+
+Easton Restaurant
+Easton 
+American 
+Wednesday 16:00 22:00, Thursday 16:00 22:00, Friday 16:00 22:00, Saturday 16:00 22:00, Sunday 13:00 20:00
+$$$
+4.6 
+472
+
+Sogo
+Easton 
+Japanese 
+Monday 11:00 22:00, Tuesday 11:00 22:00, Wednesday 11:00 22:00, Thursday 11:00 22:00, Friday 11:00 23:00, Saturday 11:00 23:00, Sunday 12:00 21:30
+$$
+4.2 
+230
+
+Maxim’s 22
+Easton
+French 
+Wednesday 17:00 21:00, Thursday 17:00 21:00, Friday 17:00 22:00, Saturday 12:00 22:00, Sunday 10:00 21:00
+$$$
+4.4 
+379 
+
+Mesa
+Easton 
+Mexican 
+Monday 11:30 22:00, Tuesday 11:30 22:00, Wednesday 11:30 22:00, Thursday 11:30 22:00, Friday 11:30 23:00, Saturday 11:30 23:00, Sunday 11:00 22:00
+$$
+4.2 
+1105
+
+Sit-Eat
+Dnipro
+bistro, pizza
+Monday 10:00 21:00, Tuesday 10:00 21:00, Wednesday 10:00 21:00, Thursday 10:00 21:00, Friday 10:00 21:00, Saturday 11:00 21:00, Sunday 11:00 21:00
+$
+3.9
+1001
+
+Coffee World
+Lviv
+cafe
+Monday 8:00 22:00, Tuesday 8:00 22:00, Wednesday 8:00 22:00, Thursday 8:00 22:00, Friday 8:00 22:00, Saturday 8:00 22:00, Sunday 9:00 22:00
+$$
+4.6
+3306
+
+Fat House
+Boryslav
+ukrainian
+Monday 9:00 21:00, Tuesday 9:00 21:00, Wednesday 9:00 21:00, Thursday 9:00 21:00, Friday 9:00 21:00, Saturday 9:00 21:00, Sunday 9:00 21:00
+$
+4.4
+1576
+
+Gas Lamp
+Lviv
+beer garden
+Monday 11:00 23:00, Tuesday 11:00 23:00, Wednesday 11:00 23:00, Thursday 11:00 23:00, Friday 11:00 23:00, Saturday 11:00 23:00, Sunday 11:00 23:00
+$$
+4.6
+15281
+
+Friends
+Kyiv
+cafe, fast food
+Monday 9:00 22:00, Tuesday 9:00 22:00, Wednesday 9:00 22:00, Thursday 9:00 22:00, Friday 9:00 22:00, Saturday 9:00 22:00, Sunday 9:00 22:00
+$$
+4.5
+2402
+
+The Most Expensive Galician Restaurant
+Lviv
+cafe
+Monday 13:00 23:00, Tuesday 13:00 23:00, Wednesday 13:00 23:00, Thursday 13:00 23:00, Friday 13:00 23:00, Saturday 13:00 23:00, Sunday 13:00 23:00
+$$$
+4.6
+1879
+
+Five Guys
+Easton
+Fast Food
+Monday 10:00 23:00, Tuesday 10:00 23:00, Wednesday 10:00 23:00, Thursday 10:00 23:00, Friday 10:00 23:00, Saturday 10:00 23:00, Sunday 10:00 23:00
+$$
+4.7
+101
+
+Dominos
+New York
+Pizza, Fast Food
+Monday 10:00 23:00, Tuesday 10:00 23:00, Wednesday 10:00 23:00, Thursday 10:00 23:00, Friday 10:00 23:00, Saturday 10:00 23:00, Sunday 10:00 23:00
+$
+3.1
+512
+
+Sushi Stop
+Miami
+Sushi, Japanese
+Monday 11:00 22:00, Tuesday 11:00 22:00, Wednesday 11:00 22:00, Thursday 11:00 22:00, Friday 11:00 22:00, Saturday 11:00 22:00, Sunday 11:00 22:00
+$$$
+3.3
+58
+
+Shake Shack
+Los Angeles
+Burgers, Fast Food
+Monday 10:00 23:00, Tuesday 10:00 23:00, Wednesday 10:00 23:00, Thursday 10:00 23:00, Friday 10:00 23:00, Saturday 10:00 23:00, Sunday 10:00 23:00
+$$
+4.8
+256
+
+Pasta Beach
+New York
+Italian, Pasta
+Monday 11:00 22:00, Tuesday 11:00 22:00, Wednesday 11:00 22:00, Thursday 11:00 22:00, Friday 11:00 22:00, Saturday 11:00 22:00, Sunday 11:00 22:00
+$$$
+4.1
+200
+
+Don Juan Mex Grill
+Easton
+mexican
+Monday 11:00 20:00, Tuesday 11:00 20:00, Wednesday 11:00 20:00, Thursday 11:00 20:00, Friday 11:00 20:00, Saturday 11:00 20:00, Sunday 12:00 19:00
+$$
+4.4
+64
+
+Angelo's restaurant 
+Easton
+american
+Tuesday	08:00 14:00, Wednesday 08:00 14:00, Thursday 08:00 14:00, Friday 08:00 14:00, Saturday 08:00 14:00, Sunday 08:00 13:00
+$
+4.7
+263
+
+Vietnamese Noodle House
+Easton
+Vietnamese 
+Monday 10:00 21:00, Tuesday 10:00 21:00, Wednesday	10:00 21:00, Thursday 10:00 21:00, Friday 10:00 21:00, Saturday 10:00 21:00, Sunday 10:00 20:00
+$$
+4.4
+32
+
+MILAN'S BISTRO
+Bethlehem
+Mediterranean
+Tuesday 9:00 15:00, Wednesday 9:00 15:00, Thursday 9:00 15:00, Friday 9:00 15:00, Saturday 8:00 15:00, Sunday 8:00 15:00
+$$
+4.9
+52
+
+Tre Scalini Ristorante
+Bethlehem
+Italian
+Tuesday 17:00 22:00, Wednesday 17:00 22:00, Thursday 17:00 22:00, Friday 17:00 22:00, Saturday 17:00 22:00
+$$$
+4.7
+149
+
+Jenny's Kuali
+Malaysian
+Bethlehem
+Monday 11:00 19:00, Tuesday 11:00 19:00, Wednesday 11:00 19:00, Thursday 11:00 19:00, Friday 11:00 21:00, Saturday 12:00 21:00
+$
+4.7
+386
+
+Don Juan Mex Grill
+Easton
+Latin American
+Monday 11:00 20:00, Tuesday 11:00 20:00, Wednesday 11:00 20:00, Thursday 11:00 20:00, Friday 11:00 20:00, Saturday 11:00 20:00, Sunday 12:00 21:00
+$$
+4.4
+63
+
+Vietnamese Noodle House
+Easton
+Vietnames, Noodle
+Monday 10:00 21:00, Tuesday 10:00 21:00, Wednesday 10:00 21:00, Thursday 10:00 21:00, Friday 10:00 21:00, Saturday 10:00 21:00, Sunday 10:00 20:00
+$
+4.4
+32
+
+Daddy's Place
+Easton
+Mediterranean
+Tuesday 11:00 20:00, Wednesday 11:00 20:00, Thursday 11:00 20:00, Friday 11:00 20:30, Saturday 11:00 20:30, Sunday 12:00 21:00
+$$
+4.7
+839
+
+Tandoor Grill
+Easton
+Indian
+Tuesday 11:00 22:00, Wednesday 11:00 22:00, Thursday 11:00 22:00, Friday 11:00 22:00, Saturday 11:00 22:00, Sunday 11:00 22:00
+$
+4.5
+181
+
+Tierra De fuego
+Northampton St
+Columbian
+Monday 11:00 20:00, Tuesday 11:00 20:00, Thursday 11:00 20:00, Friday 11:00 21:00, Saturday 11:00 21:00, Sunday 11:00 20:00
+$$
+4.0
+179
+
+Mesa Modern Mexican
+3rd St
+Mexican
+Monday 11:30 22:00, Tuesday 11:30 22:00, Wednesday 11:30 22:00, Thursday 11:30 22:00, Friday 11:30 23:00, Saturday 11:30 23:00, Sunday 11:00 22:00
+$$
+4.2
+1109
+
+3rd & Ferry Fish Market
+3rd St
+Seafood
+Tuesday 12:00 22:30, Wednesday 12:00 22:30, Thursday 12:00 22:30, Friday 12:00 22:30, Saturday 11:00 22:30, Sunday 11:00 21:30
+$$$
+4.5
+1498
+
+Ray's Pizza
+Willesden
+Italian
+Monday 09:00 17:00, Tuesday 09:00 17:00, Wednesday 09:00 17:00, Thursday 08:00 12:00
+$$
+4.4
+59
+
+Plant Place
+Pontiac
+vegetarian
+Monday 08:30 15:00, Wednesday 08:30 15:00, Friday 08:30 15:00
+$$$
+4.9
+15
+
+Burgers for Breakfast
+Gasp
+fast food, fried, take-out
+Monday 07:30 18:00, Tuesday 07:30 18:00, Wednesday 07:30 18:00, Thursday 07:30 18:00, Friday 05:30 18:00, Saturday 05:30 18:00
+$
+2.3
+66
+
+Olympic Feast
+Cushing
+Greek, Mediterranean
+Sunday 12:00 20:00, Monday 10:00 20:00, Tuesday 10:00 20:00, Wednesday 10:00 20:00, Thursday 10:00 20:00, Friday 10:00 20:00, Saturday 10:00 20:00
+$$$
+3.7
+97
+
+La Comida Deliciosa
+Ripon
+Mexican
+Monday 06:00 20:00, Tuesday 06:00 20:00, Wednesday 06:00 20:00, Thursday 06:00 20:00, Friday 06:00 20:00
+$$
+4.2
+24
+
+Tacos el Durango Mexican Grill
+Gurnee
+Mexican
+Monday 9:00 15:00, Tuesday 9:00 15:00, Wednesday 9:00 19:00, Thursday 9:00 17:00, Friday 9:00 19:00, Saturday 9:00 15:00, Sunday 9:00 15:00  
+$
+4.6
+339
+
+Giordano's
+Gurnee
+Pizza
+Monday 11:00 21:00, Tuesday 11:00 21:00, Wednesday 11:00 21:00, Thursday 11:00 21:00, Friday 11:00 22:00, Saturday 11:00 22:00, Sunday 12:00 21:00  
+$$
+4.3
+1453
+
+Portillo's Hot Dogs
+Gurnee
+Fast food, Italian
+Monday 10:30 22:00, Tuesday 10:30 22:00, Wednesday 10:30 22:00, Thursday 10:30 22:00, Friday 10:30 23:00, Saturday 10:30 23:00, Sunday 10:30 22:00 
+$
+4.2
+4080
+
+Culver's
+Gurnee
+Burgers, Fast Food
+Monday 10:30 22:00, Tuesday 10:30 22:00, Wednesday 10:30 22:00, Thursday 10:30 22:00, Friday 10:30 22:00, Saturday 10:30 22:00, Sunday 10:30 22:00 
+$
+4.4
+1203
+
+Buttermilk Cafe
+Easton
+Breakfast
+Monday 7:00 2:30, Tuesday 7:00 2:30, Wednesday 7:00 2:30, Thursday 7:00 2:30, Friday 7:00 2:30, Saturday 7:00 2:30, Sunday 7:00 2:30 
+$
+4.1
+35
+
+Daddy's Place
+Easton
+Mediterranean
+Tuesday 11:00 20:00, Wednesday 11:00 20:00, Thursday 11:00 20:00, Friday 11:00 20:30, Saturday 11:00 20:30, Sunday 11:00 19:00
+$$
+4.7
+838
+
+McCarthy's Red Stag Pub
+Bethlehem
+Irish
+Tuesday 12:00 21:00, Wednesday 12:00 21:00, Thursday 12:00 21:00, Friday 12:00 23:00, Saturday 11:00 23:00, Sunday 9:00 21:00 
+$$
+4.6
+1456
+
+5 Corner's Kitchen
+Marblehead
+French
+Tuesday 5:00 21:00, Wednesday 5:00 21:00, Thursday 5:00 21:00, Friday 5:00 21:00, Saturday 5:00 21:00 
+$$$
+4.8
+201
+
+Three Cod Tavern
+Marblehead
+Seafood
+Monday 11:30 21:00, Tuesday 11:30 21:00, Wednesday 11:30 21:00, Thursday 11:30 21:00, Friday 11:30 22:00, Saturday 11:30 22:00, Sunday 11:00 21:00
+$$
+4.5
+264
+
+3rd & Ferry Fish Market
+Easton
+Seafood  
+Tuesday 12:00 22:30, Wednesday 12:00 22:30, Thursday 12:00 22:30, Friday 12:00 22:30, Saturday 11:00 22:30, Sunday 11:00 21:30
+$$
+4.6
+1492
+
+McDonald's 
+Easton
+Fried chicken, fast food
+Monday 05:00 23:00, Saturday 05:00 24:00, Sunday 05:00 24:00
+$
+4.4
+6200
+
+Burger King 
+Easton
+Burgers, fast food
+Tuesday 06:00 22:00, Friday 06:00 22:00, Sunday 07:00 22:00
+$
+4.3
+1200
+
+Acasia Thai Restaurant
+Phillipsburg
+Asian, Thai
+Tuesday 11:30 15:00, Tuesday 16:00 21:00, Saturday 11:30 22:00
+$$
+4.7
+2100
+
+Takumi Sushi
+Easton
+Sushi
+Tuesday 11:00 21:30, Sunday 12:00 21:00, Friday 11:00 22:30
+$$
+4.8
+440
+
+ShangWei Szechuan
+Bethlehem
+Chinese
+Tuesday 11:00 21:45, Saturday 11:00 22:30, Sunday 11:30 21:45
+$$
+4.5
+169
+
+Olives
+Cleveland
+Italian
+Monday 9:00 17:00, Tuesday  9:00 17:00, Wednesday 9:00 17:00 
+$$$
+2
+20
+
+Happy Potatoes
+Portland
+Vegetarian, Greek
+Monday 9:00 17:00, Wednesday 9:00 17:00, Friday 9:00 17:00, Saturday 9:00 17:00, Sunday 9:00 17:00
+$$
+4
+37
+
+Bob’s
+Portland
+American
+Monday 10:00 21:00, Tuesday 10:00 21:00, Wednesday 10:00 21:00, Thursday 10:00 21:00, Friday 10:00 23:00, Saturday 10:00 23:00, Sunday 10:00 21:00
+$
+3
+106
+
+Red’s
+New Orleans
+French, American
+Monday 10:00 21:00, Tuesday 10:00 21:00, Wednesday 10:00 21:00, Thursday 10:00 21:00, Friday 10:00 23:00, Saturday 10:00 23:00, Sunday 10:00 21:00
+$$$
+5
+21
+
+Shrimp Time
+Los Angeles
+Seafood
+Monday 10:00 21:00, Tuesday 10:00 21:00, Wednesday 10:00 21:00, Thursday 10:00 21:00, Friday 10:00 23:00, Saturday 10:00 23:00, Sunday 10:00 21:00
+$$
+1
+45
+
+Mod Pizza
+New York
+American, Fast Food
+Tuesday 10:00 21:00, Wednesday 10:00 21:00, Thursday 10:00 21:00, Friday 10:00 19:00
+$
+3.2
+238
+
+Domino's
+Easton
+American, Fast Food
+Monday 10:00 21:00, Tuesday 9:00 20:00, Saturday 11:00 23:00, Sunday 11:00 19:00
+$
+3.9
+458
+
+Popeyes
+Phillisberg
+American, Fast Food
+Monday 10:00 21:00, Tuesday 9:00 20:00, Wednesday 9:00 21:00, Thursday 10:00 20:00, Saturday 11:00 23:00, Sunday 11:00 19:00
+$
+4.1
+68
+
+Taco Bell
+Phillisberg
+Mexican, Fast Food
+Monday 10:00 21:00, Wednesday 10:00 21:00
+$
+2.7
+1004
+
+Panda Express
+Easton
+Chinese
+Monday 10:00 21:00, Tuesday 9:00 20:00, Wednesday 8:00 22:30, Saturday 11:00 23:00, Sunday 11:00 19:00
+$
+2.4
+789
