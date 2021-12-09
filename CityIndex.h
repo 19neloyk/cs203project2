@@ -1,11 +1,11 @@
-#ifndef CIYTINDEX_H
+#ifndef CITYINDEX_H
 #define CITYINDEX_H
 
 #include "IntArray.h"
 
 /**
  * @struct CityNode
- * Creates a node to be used inthe creation of the CityIndex
+ * Creates a node to be used in the creation of the CityIndex
  * Contains the city name and the restuarant index it corresponds to
  */ 
 typedef struct CityNode_struct{

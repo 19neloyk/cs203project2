@@ -3,14 +3,22 @@
 
 #include "restaurant.h"
 #include "ArrayList.h"
+#include "BinaryTree.h"
 
 
 /**
  * Reads in a txt file and populates an ArrayList with them 
- * @param fileName string of the name of the txt file
+ * @param filePath string of the name of the txt file
  * @return ArrayList of Resturants read in from the file, null if there was an error 
  */
 ArrayList* readIn(char* filePath); 
+
+/**
+ * Reads in a txt file and populates a BinaryTree with its entries
+ * @param filePath string of the name of the txt file
+ * @return BinaryTree of Restaurants read in from the file, null if there was an error
+ */
+BinaryTree* readINBT(char* filePath);
 
 /**
  * Reads in the name of a restaurant and puts in in the specified restaurant object

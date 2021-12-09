@@ -279,6 +279,95 @@ void printRestaurant(Restaurant *r)
     
 }
 
+bool isTimeValid (Restaurant* r, int day, char* time) {
+    if (strstr(time, "*")) {
+        return true;
+    }
+
+    char* openTimeDay = r->times[day][0];
+    char* closeTimeDay = r->times[day][1];
+    int openHr, openMin, curHr, curMin, closeHr, closeMin;    
+    sscanf(openTimeDay, "%d:%d", &openHr, &openMin);
+    sscanf(closeTimeDay, "%d:%d", &closeHr, &closeMin);
+
+    if (curHr < openHr || curHr > openHr) {
+        return false;
+    }
+    if (curHr == openHr && curMin < openMin) {
+        return false;
+    }
+    if (curHr == closeHr && curMin > closeMin) {
+        return false;
+    }
+
+    return true;
+
+}
+
+bool isCityValid(Restaurant* r, char* city) {
+    if (strstr(city, "*")) {
+        return true;
+    }
+    char* restCity = r->city;
+    if (strcmp(restCity, city) == 0) {
+        return true;
+    }
+    return false;
+} 
+
+bool isCategoryValid(Restaurant* r, char** categories, int numCategories, bool categoriesUsingDisjunctions) {
+    if (strstr(categories[0], "*")) {
+        return false;
+    }
+    char** restCategories = r->category;
+    int numRestCategories = r->numCategory;
+
+    //Case for disjunctions using "OR"
+    if (categoriesUsingDisjunctions) {
+        for (int i = 0; i < numCategories ; i ++) {
+            for (int j = 0 ; j < numRestCategories ; j ++) {
+                if (strcmp(categories[i], restCategories[j]) == 0) {
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
+
+    //Case for conjunctions using ","
+    for (int i = 0; i < numCategories ; i ++) {
+        for (int j = 0 ; j < numRestCategories ; j ++) {
+            if (strcmp(categories[i], restCategories[j]) == 0) {
+                break;
+            }
+            if (j == numRestCategories - 1) {
+                return false;
+                }
+        }
+    }
+    return true;
+}
+
+bool isCostValid (Restaurant* r, int cost) {
+    if (cost < r->cost) {
+        return false;
+    }
+    return true;
+}
+
+
+bool checkMatch(Restaurant* r, int day, char* time, char* city, char** categories, int numCategories, int cost, bool categoriesUsingDisjunctions) {
+    bool timeValid;
+    bool cityValid; 
+    bool categoryValid; 
+    bool costValid;
+    timeValid = isTimeValid(r, day, time);
+    cityValid = isCityValid(r, city);
+    categoryValid = isCategoryValid(r, categories, numCategories, categoriesUsingDisjunctions);
+    costValid = isCostValid(r, cost);
+    return (timeValid && cityValid && categoryValid && costValid);
+}
+
 /**
  * Frees the memory of a Restaurant object (acts like a destructor)
  * @param r the restaurant to free 

@@ -97,6 +97,23 @@ void processUserQuery(ArrayList *arr, Indexor *index, int day, char *time, char 
 }
 
 /**
+ * Assigns ranks then organizes the restaurants by their ranks 
+ * @param tree knowledge base tree organized by name
+ * @param locationIndex tree organized by location
+ * @param day numerical value for day
+ * @param time string val of the time to search for 
+ * @param city string of city to search for 
+ * @param categories array of cateogries to search for 
+ * @param numCategories number of categories in the categoris array
+ * @param cost numercail value for cost 
+ * @param categoriesUsingDisjunctions determines whether we look for categories conjunctively (the default) or disjunctively
+ */ 
+void processUserQueryProject2(BinaryTree* tree, BinaryTree* locationIndex, int day, char* time, char* city, char** category, int numCategories, int cost, bool categoriesUsingDisjunctions) {
+    LinkedList *exactMatches = createLinkedList();
+    
+}
+
+/**
  * Assigns ranks to the restaurants by searching each of the indices and asssinging
  * a rank to each one of the restaruants in the knowledge base 
  * Also accounts for wildcard input 

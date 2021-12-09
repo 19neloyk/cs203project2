@@ -1,6 +1,6 @@
 #ifndef RESTAURANT_H
 #define RESTAURANT_H
-
+#include <stdbool.h>
 /**
  * @struct Restaurant
  * @var Restaurant::name 
@@ -66,6 +66,9 @@ extern void setCity(Restaurant* r, char* cty);
  */ 
 extern void setCategory(Restaurant* r, char** catsArr, int numCategory);  
 extern void setTime(Restaurant* r, char*** hrs); 
+
+//Check if a given restaurant is a match with the given criteria 
+extern bool checkMatch(Restaurant* r, int day, char* time, char* city, char** category, int numCategories, int cost, bool categoriesUsingDisjunctions);
 
 /**
  * Prints the restaurant to the terminal 

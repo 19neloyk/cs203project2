@@ -16,6 +16,8 @@ Query *createQuery()
     q->category = NULL;
     q->numCategories = -1; 
     q->cost = -1;
+    q->categoriesAreDisjunctive = false;
+    return q;
 }
 
 /**
@@ -44,7 +46,7 @@ void printQuery(Query *q)
     printf("Your query: \n");
     printf("City: %s\n", q->city); 
     printf("Day: %d, Time: %s\n", q->day, q->time);
-    printf("Num cateogires %d\n", q->numCategories); 
+    printf("Num categories %d\n", q->numCategories); 
     printf("Categories: ");
     for (int i = 0; i < q->numCategories; i++)
     {
@@ -72,6 +74,30 @@ void control()
         free(queryy);
     }
 }
+
+
+/**
+ * Controls the flow of the program for PROJECT2. 
+ * Reads in the restaurant file and populates the knowledge file (see FileReader.c for implementaiton of readIn)
+ * Creates all the indexing stuctores and populates them (see Indexor.c for implementaiton detaails)
+ * Controls the user queries flow 
+ */ 
+void controlProject2()
+{
+
+    BinaryTree* rests = readINBT("restaurants.txt");
+
+    BinaryTree* locInd = buildLocationIndex(rests);
+
+    while (true)
+    {
+        char *queryy = getQuery();
+        processQueryProject2(queryy, rests, locInd);
+        free(queryy);
+    }
+}
+
+
 
 /**
  * Determines what the user wants based on their query
@@ -107,6 +133,35 @@ void processQuery(char *query, ArrayList *arr, Indexor *index)
         printf("Invalid command. Valid input: \np - print all restaurants\ns - search for a restaurant\nx - exit the program\n");
     }
 }
+
+
+void processQueryProject2(char* query, BinaryTree* tree, BinaryTree* locationIndex) {
+    if (strcmp(query, "p") == 0)
+    {
+        printBT(tree);
+    }
+    else if (strcmp(query, "x") == 0)
+    {
+        //COMMENTS DIRECTLY BELOW ARE FUNCTIONS REQUIRED TO FREE THE ARRAY VERSION OF THIS PROGRAM
+        /*
+        free(query);
+        arrayListDestructor(arr);
+        indexDestructor(index);
+        */
+        printf("Goodbye!\n");
+        exit(0);
+    }
+    else if (strcmp(query, "s") == 0)
+    {
+        searchQueryProject2(tree, locationIndex); 
+    }
+    else
+    {
+        printf("Invalid command. Valid input: \np - print all restaurants\ns - search for a restaurant\nx - exit the program\n");
+    }
+}
+
+
 
 /**
  * Reads in the user's query into a string that is returned
@@ -192,6 +247,148 @@ void searchQuery(ArrayList* arr, Indexor* index)
     
     //printQuery(q);
 
+    free(qCategory); 
+    free(qCost);
+    free(qTime);
+    queryDestructor(q);
+}
+
+/**
+ * Parses the category query
+ * Assumes comma separated, no space in between 
+ * Figures out the number of categories and mallocs based off of that 
+ * Called in searchQuery
+ * @param qCategory string containing the user's query 
+ * @param q Query object
+ */ 
+void processCategoryProject2(char *qCategory, Query *q)
+{
+    // parse that string
+    // check restaurant class to see whether we are suppose to malloc the strings that go in the array
+    int counter = 1;
+    // EITHER USES "OR" (DISJUNCTION) or "," (CONJUNCTION)
+    // both of these strings cannot be within the string
+    bool usingOR = false;
+
+    // Checks for how many commas as an indicator
+    // of how much to allocate the array used for queries
+    for(int i = 0; i < strlen(qCategory); i++){
+        if(qCategory[i] == '\n'){
+            break;
+        } else if (qCategory[i] == ','){
+            counter++; 
+        } 
+    }
+
+    // Checks for how many commas as an indicator
+    // of how much to allocate the array used for queries
+    for(int i = 0; i < strlen(qCategory) - 1; i++){
+        if(qCategory[i] == '\n'){
+            break;
+        } else if (qCategory[i] == 'O' && qCategory[i + 1] == 'R'){
+            counter++; 
+            usingOR = true;
+        } 
+    }
+
+    // allocate array
+    char **cats = calloc(counter, sizeof(char *));
+    for (int i = 0; i < counter; i++)
+    {
+        cats[i] = calloc(100, sizeof(char));
+    }
+
+    char *ptr2 = qCategory;
+    char *token;
+
+    //Choose delimiter based on if we are using
+    if (usingOR) {
+        token = strtok(ptr2, "OR");
+    } else {
+        token =  strtok(ptr2, ",");  
+    }
+
+    int a = 0;
+    while (token != NULL)
+    {
+
+        if (token[strlen(token) - 1] == '\n')
+        {
+            token[strlen(token) - 1] = '\0';
+        }
+        int j = 0;
+        for (int i = 0; i < strlen(token); i++)
+        {
+            cats[a][i] = token[i];
+        }
+
+        if (usingOR) {
+            token = strtok(NULL, "OR");
+        } else {
+            token =  strtok(NULL, ",");  
+        }
+
+        a++;
+    }
+
+    q->numCategories = counter;
+    q->category = cats;
+    q->categoriesAreDisjunctive = usingOR;
+}
+
+/**
+ * Called when the user wants to search the knowledge base
+ * @param arr knowledge base
+ * @param index indices
+ */ 
+void searchQueryProject2(BinaryTree* tree, BinaryTree* locationIndex)
+{
+    Query *q = createQuery();
+    
+    char *qCity = malloc(sizeof(char) * 100);
+    printf("City: ");
+    scanf(" %100[^\n]s", qCity);
+    trimQuery(qCity); 
+
+    q->city = qCity; 
+    
+
+    char *qCategory = malloc(sizeof(char) * 100);
+    printf("Categories: ");
+    
+    scanf(" %100[^\n]s", qCategory);
+    trimQuery(qCategory); 
+    if(strstr(qCategory, "*")){
+        q->numCategories = 0; 
+    } else {
+        processCategoryProject2(qCategory, q); 
+    }
+    
+
+    // process the cost
+    char *qCost = malloc(sizeof(char) * 50);
+    printf("Cost ($, $$, $$$): ");
+    scanf(" %50[^\n]s", qCost);
+    trimQuery(qCost); 
+    
+    processCost(qCost, q);
+     
+    // process the time
+    char *qTime = malloc(sizeof(char) * 50);
+    printf("Time (day/hr ex. Monday/13:00): ");
+    scanf(" %50[^\n]s", qTime);
+    trimQuery(qTime); 
+
+    if(strstr(qTime, "*")){
+        q->time = calloc(2, sizeof(char)); 
+        q->time[0] = '*'; 
+    } else {
+        processTime(qTime, q);
+    }
+
+    searchForCriteria(tree, locationIndex, q->day, q->time, q->city, q->category, q->numCategories, q->cost, q->categoriesAreDisjunctive);
+
+    //printQuery(q);
     free(qCategory); 
     free(qCost);
     free(qTime);

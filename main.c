@@ -10,7 +10,8 @@
 
 int main(void){
 
-    control(); 
+    //control(); 
+    controlProject2();
 
 
     return 0; 

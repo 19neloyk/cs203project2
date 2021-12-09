@@ -110,6 +110,116 @@ ArrayList *readIn(char *filePath)
     return arr;
 }
 
+
+/**
+ * Reads in the text file
+ * Makes sure that it's a valid file to read in 
+ * If not, the program exits and prints an error message
+ * Controls what datatype to readin based on the line numbers
+ * @param filePath name of the file to read in 
+ */
+BinaryTree* readINBT(char* filePath) {
+
+
+    // open the file in read mode
+    FILE *file;
+    if ((file = fopen(filePath, "r")) == NULL)
+    {
+        printf("Error opening file\n");
+        exit(1); // exits from the whole program
+    }
+
+
+
+    //tree organized by name
+    BinaryTree* tree = createBT();
+    Restaurant *current = malloc(sizeof(Restaurant));
+    createEmptyRestuarant(current);
+
+
+
+    // read in the file line by line
+    int lineSize = 255;
+    char *line = calloc(lineSize, sizeof(char));
+    int lineNum = 0;
+    while (fgets(line, lineSize, file))
+    {
+        //Case when we encounter the next restaurant
+        if (*line == '\n')
+        {
+            lineNum = 0;
+            Restaurant *temp = current;
+            insertInBTName(temp, tree);
+            //insertInBTLocation(temp, tree);
+            //current = createEmptyRestuarant();
+            current = malloc(sizeof(Restaurant)); //To make the next restaurant
+            createEmptyRestuarant(current);
+        }
+        else
+        {
+            if (lineNum == 0)
+            {
+                // name
+                readName(current, line);
+                lineNum = 1;
+            }
+            else if (lineNum == 1)
+            {
+                // city
+                readCity(current, line);
+                lineNum = 2;
+            }
+            else if (lineNum == 2)
+            {
+                // category
+                readCategories(current, line);
+                lineNum = 3;
+            }
+            else if (lineNum == 3)
+            {
+                // open time
+                readTimes(current, line);
+                lineNum = 4;
+            }
+            else if (lineNum == 4)
+            {
+
+                // cost
+                readCost(current, line);
+                
+                lineNum = 5;
+            }
+            else if (lineNum == 5)
+            {
+                //rank
+                char *ptr3 = line;
+                current->rank = atof(ptr3);
+                lineNum = 6;
+            }
+            else if (lineNum == 6)
+            {
+                // reviewers
+                char *ptr4 = line;
+                current->reviewers = atoi(ptr4);
+                
+            }
+        }
+        free(line);
+        line = calloc(lineSize, sizeof(char));
+    }
+
+    // insert and free the final restaurant
+    insertInBTName(current, tree);
+    // free the last line
+    free(line);
+
+    // close the file
+    fclose(file);
+    return tree;
+}
+
+
+
 /**
  * Reads in the name of the restaruant 
  * Gets rid of \n and spaces 

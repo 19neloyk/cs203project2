@@ -6,6 +6,7 @@
 #include "CityIndex.h"
 #include "TimeIndex.h"
 #include "IntArray.h"
+#include "BinaryTree.h"
 
 /**
  * @struct Indexor
@@ -52,6 +53,20 @@ extern void indexDestructor(Indexor* index);
  * @param cost numercail value for cost 
  */ 
 extern void processUserQuery(ArrayList* arr, Indexor* index, int day, char* time, char* city, char** category, int numCategories, int cost); 
+
+/**
+ * Assigns ranks then organizes the restaurants by their ranks 
+ * @param tree knowledge base tree organized by name
+ * @param locationIndex tree organized by location
+ * @param day numerical value for day
+ * @param time string val of the time to search for 
+ * @param city string of city to search for 
+ * @param categories array of cateogries to search for 
+ * @param numCategories number of categories in the categoris array
+ * @param cost numercail value for cost 
+ * @param categoriesUsingDisjunctions determines whether we look for categories conjunctively (the default) or disjunctively
+ */ 
+extern void processUserQueryProject2(BinaryTree* tree, BinaryTree* locationIndex, int day, char* time, char* city, char** category, int numCategories, int cost, bool categoriesUsingDisjunctions); 
 
 /**
  * Assigns ranks to the restaurants 

@@ -22,6 +22,7 @@ typedef struct Query_struct{
     char** category;
     int numCategories;
     int cost; 
+    bool categoriesAreDisjunctive;
 
 } Query; 
 
@@ -52,12 +53,29 @@ extern void printQuery(Query *q);
 extern void control(); 
 
 /**
+ * Controls the flow of the program for PROJECT2. 
+ * Reads in the restaurant file and populates the knowledge file (see FileReader.c for implementaiton of readIn)
+ * Creates all the indexing stuctores and populates them (see Indexor.c for implementaiton detaails)
+ * Controls the user queries flow 
+ */ 
+void controlProject2();
+
+/**
  * Determines the program flow given a user's query
  * @param query User's query 
  * @param arr restaurant knowledge base
  * @param index container of all the indexing structures 
  */ 
 extern void processQuery(char* query, ArrayList* arr, Indexor* index); 
+
+/**
+ * Determines the program flow given a user's query for Project2
+ * 
+ * @param query User's query 
+ * @param tree restaurant knowledge base tree by name
+ * @param locationIndex restaurant knowledge base tree by location --> no need for extra complicated indexing structures
+ */ 
+extern void processQueryProject2(char* query, BinaryTree* tree, BinaryTree* locationIndex); 
 
 /**
  * Read in the user's query
@@ -80,6 +98,15 @@ extern void trimQuery(char* s);
  * @param index container of indexing structures 
  */ 
 extern void searchQuery(ArrayList *arr, Indexor* index); 
+
+
+/**
+ * Processes a user's search query, queries the user for more info 
+ * 
+ * @param tree restaurant knowledge base tree by name
+ * @param locationIndex restaurant knowledge base tree by location
+ */ 
+extern void searchQueryProject2(BinaryTree* tree, BinaryTree* locationIndex); 
 
 /**
  * Given a category query, parse it and add the category array to the Query object
