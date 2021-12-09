@@ -283,8 +283,7 @@ bool isTimeValid (Restaurant* r, int day, char* time) {
     if (day == -1) {
         return true;
     }
-
-    printRestaurant(r);
+    
     char* openTimeDay = r->times[day][0];
     char* closeTimeDay = r->times[day][1];
 
