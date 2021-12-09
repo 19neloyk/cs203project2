@@ -283,7 +283,7 @@ bool isTimeValid (Restaurant* r, int day, char* time) {
     if (day == -1) {
         return true;
     }
-    
+
     char* openTimeDay = r->times[day][0];
     char* closeTimeDay = r->times[day][1];
 
@@ -292,7 +292,7 @@ bool isTimeValid (Restaurant* r, int day, char* time) {
     sscanf(closeTimeDay, "%d:%d", &closeHr, &closeMin);
     sscanf(time, "%d:%d", &curHr, &curMin);
 
-    if (curHr < openHr || curHr > openHr) {
+    if (curHr < openHr || curHr > closeHr) {
         return false;
     }
     if (curHr == openHr && curMin < openMin) {
