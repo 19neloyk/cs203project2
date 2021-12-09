@@ -88,7 +88,6 @@ void controlProject2()
     BinaryTree* rests = readINBT("restaurants.txt");
 
     BinaryTree* locInd = buildLocationIndex(rests);
-
     while (true)
     {
         char *queryy = getQuery();
@@ -303,7 +302,7 @@ void processCategoryProject2(char *qCategory, Query *q)
 
     //Choose delimiter based on if we are using
     if (usingOR) {
-        token = strtok(ptr2, "OR");
+        token = strtok(ptr2, " OR ");
     } else {
         token =  strtok(ptr2, ",");  
     }
@@ -323,7 +322,7 @@ void processCategoryProject2(char *qCategory, Query *q)
         }
 
         if (usingOR) {
-            token = strtok(NULL, "OR");
+            token = strtok(NULL, " OR ");
         } else {
             token =  strtok(NULL, ",");  
         }

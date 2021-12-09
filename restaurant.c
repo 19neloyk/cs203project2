@@ -280,15 +280,18 @@ void printRestaurant(Restaurant *r)
 }
 
 bool isTimeValid (Restaurant* r, int day, char* time) {
-    if (strstr(time, "*")) {
+    if (day == -1) {
         return true;
     }
 
+    printRestaurant(r);
     char* openTimeDay = r->times[day][0];
     char* closeTimeDay = r->times[day][1];
+
     int openHr, openMin, curHr, curMin, closeHr, closeMin;    
     sscanf(openTimeDay, "%d:%d", &openHr, &openMin);
     sscanf(closeTimeDay, "%d:%d", &closeHr, &closeMin);
+    sscanf(time, "%d:%d", &curHr, &curMin);
 
     if (curHr < openHr || curHr > openHr) {
         return false;
@@ -316,17 +319,26 @@ bool isCityValid(Restaurant* r, char* city) {
 } 
 
 bool isCategoryValid(Restaurant* r, char** categories, int numCategories, bool categoriesUsingDisjunctions) {
-    if (strstr(categories[0], "*")) {
-        return false;
+    if (numCategories == 0) {
+        return true;
     }
+
     char** restCategories = r->category;
     int numRestCategories = r->numCategory;
 
     //Case for disjunctions using "OR"
     if (categoriesUsingDisjunctions) {
+        printf("NEW–––––––\n");
         for (int i = 0; i < numCategories ; i ++) {
+            printf("%s ->", categories[i]);
             for (int j = 0 ; j < numRestCategories ; j ++) {
+                printf("%s  ", restCategories[j]);
+                printf(" with cmp val %d  ;", strcmp(categories[i], restCategories[j]) );
+                if (j == numRestCategories - 1) {
+                    printf("\n");
+                }
                 if (strcmp(categories[i], restCategories[j]) == 0) {
+                    printf("YUHHHH\n");
                     return true;
                 }
             }

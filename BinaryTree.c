@@ -43,6 +43,7 @@ void buildLocationIndexHelper(BinaryTree* locationIndex, BTNode* node) {
         buildLocationIndexHelper(locationIndex,node->left);
     }
     insertInBTLocation(node->rest, locationIndex);
+
     if (node->right != NULL) {
         buildLocationIndexHelper(locationIndex,node->right);
     }
@@ -52,7 +53,7 @@ void buildLocationIndexHelper(BinaryTree* locationIndex, BTNode* node) {
 BinaryTree* buildLocationIndex(BinaryTree* tree) {
     BinaryTree* locationIndex = createBT();
     if (tree->root != NULL) {
-        buildLocationIndexHelper(tree, tree->root);
+        buildLocationIndexHelper(locationIndex, tree->root);
     }
     return locationIndex;
 }
@@ -150,6 +151,7 @@ void insertInBTLocation(Restaurant* r, BinaryTree* tree) {
 
     if (tree->root == NULL) {
         tree->root = newNode;
+        return;
     }
 
     //Current restaurant in BT
