@@ -23,7 +23,7 @@ typedef struct Query_struct{
     int numCategories;
     int cost; 
     bool categoriesAreDisjunctive;
-
+    char* name;
 } Query; 
 
 /**
@@ -59,6 +59,9 @@ extern void control();
  * Controls the user queries flow 
  */ 
 void controlProject2();
+
+
+
 
 /**
  * Determines the program flow given a user's query
@@ -100,6 +103,8 @@ extern void trimQuery(char* s);
 extern void searchQuery(ArrayList *arr, Indexor* index); 
 
 
+
+
 /**
  * Processes a user's search query, queries the user for more info 
  * 
@@ -107,6 +112,14 @@ extern void searchQuery(ArrayList *arr, Indexor* index);
  * @param locationIndex restaurant knowledge base tree by location
  */ 
 extern void searchQueryProject2(BinaryTree* tree, BinaryTree* locationIndex); 
+
+
+/**
+ * Called when the user wants to add a new restaurant to the knowledge base manually
+ * @param tree knowledge base
+ * @param index indices
+ */ 
+extern void addQueryProject2(BinaryTree* tree, BinaryTree* locationIndex);
 
 /**
  * Given a category query, parse it and add the category array to the Query object

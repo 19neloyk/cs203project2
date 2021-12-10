@@ -154,9 +154,12 @@ void processQueryProject2(char* query, BinaryTree* tree, BinaryTree* locationInd
     {
         searchQueryProject2(tree, locationIndex); 
     }
+    else if (strcmp(query, "a") == 0) {
+        addQueryProject2(tree, locationIndex);
+    }
     else
     {
-        printf("Invalid command. Valid input: \np - print all restaurants\ns - search for a restaurant\nx - exit the program\n");
+        printf("Invalid command. Valid input: \np - print all restaurants\ns - search for a restaurant\nx - exit the program\na - add a restaurant\n");
     }
 }
 
@@ -337,8 +340,8 @@ void processCategoryProject2(char *qCategory, Query *q)
 
 /**
  * Called when the user wants to search the knowledge base
- * @param arr knowledge base
- * @param index indices
+ * @param tree knowledge base tree
+ * @param locationIndex tree organized by location serving as index 
  */ 
 void searchQueryProject2(BinaryTree* tree, BinaryTree* locationIndex)
 {
@@ -393,6 +396,54 @@ void searchQueryProject2(BinaryTree* tree, BinaryTree* locationIndex)
     free(qTime);
     queryDestructor(q);
 }
+
+
+/**
+ * Called when the user wants to add a restaurant to the knowledge base
+ * @param tree knowledge base
+ * @param index indices
+ */ 
+void addQueryProject2(BinaryTree* tree, BinaryTree* locationIndex) {
+    Restaurant* toAdd = (Restaurant*) malloc (sizeof(Restaurant));
+    createEmptyRestuarant(toAdd);
+
+    int lineSize = 300;
+    char *line = (char*) malloc(sizeof(char) * 300);
+    printf("Name: ");
+    scanf(" %200[^\n]s", line);
+    readName(toAdd, line);
+
+    printf("City: ");
+    scanf(" %200[^\n]s", line);
+    readCity(toAdd, line);
+
+    printf("Categories: ");
+    scanf(" %200[^\n]s", line);
+    readCategories(toAdd, line);
+
+    printf("Times: ");
+    scanf(" %200[^\n]s", line);
+    readTimes(toAdd, line);
+
+    printf("Cost: ");
+    scanf(" %200[^\n]s", line);
+    readCost(toAdd, line);
+
+    printf("Rank: ");
+    scanf(" %200[^\n]s", line);
+    toAdd->rank = atof(line);
+
+    printf("Reviewers: ");
+    scanf(" %200[^\n]s", line);
+    toAdd->reviewers = atoi(line);
+
+    insertInBTName(toAdd, tree);
+    insertInBTLocation(toAdd, locationIndex);
+
+    printf("Restaurant has been added!\nHere is the content:\n––––––––––––––––––––––––––––––––––\n");
+    printRestaurant(toAdd);
+}
+
 
 
 /**
