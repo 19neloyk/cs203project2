@@ -135,6 +135,13 @@ extern void modifyQueryProject2(BinaryTree* tree);
 extern void matchQueryProject2(BinaryTree* tree);
 
 /**
+ * Called when the user wants to write a file to the knowledge base
+ * @param tree the knowledge base tree
+ * @param locationIndex the index tree for location
+ */ 
+void writeQueryProject2(BinaryTree* tree, BinaryTree* locationIndex);
+
+/**
  * Given a category query, parse it and add the category array to the Query object
  * Helper to searchQuery
  * @param qCategory query

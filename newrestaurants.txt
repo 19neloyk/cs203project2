@@ -1,0 +1,23 @@
+Pizza Sam
+New York
+Pizza, Italian
+Monday 7:00 22:00, Tuesday 7:00 22:00, Wednesday 7:00 22:00, Thursday 7:00 22:00, Friday 7:00 22:00, Saturday 7:30 11:00, Sunday 7:00 22:00
+$
+4
+13
+
+White Castle
+New York
+Fast Food
+Monday 11:00 20:00, Tuesday 11:00 20:00, Wednesday 11:00 20:00, Thursday 11:00 20:00, Friday 11:00 21:00, Saturday 8:00 21:00, Sunday 8:00 20:00
+$$
+3.5
+84
+
+Ming Star
+New York
+Chinese
+Monday 11:00 20:00, Tuesday 11:00 20:00, Wednesday 11:00 20:00, Thursday 11:00 20:00, Friday 11:00 21:00, Saturday 8:00 21:00, Sunday 8:00 20:00
+$
+4.5
+995

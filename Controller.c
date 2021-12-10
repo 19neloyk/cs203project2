@@ -163,6 +163,9 @@ void processQueryProject2(char* query, BinaryTree* tree, BinaryTree* locationInd
     else if (strcmp (query, "e") == 0) {
         matchQueryProject2(tree);
     }
+    else if (strcmp (query, "w") == 0) {
+        writeQueryProject2(tree, locationIndex);
+    }
     else
     {
         printf("Invalid command. Valid input: \np - print all restaurants\ns - search for a restaurant\nx - exit the program\na - add a restaurant\nm – modify a restaurant specified by name and location\ne – print information of specified restaurant based on name and location\n");
@@ -535,6 +538,111 @@ extern void matchQueryProject2(BinaryTree* tree){
     //Do not free modified right now or there will be errors
     printf("Restaurant has been found!\nHere is the content:\n––––––––––––––––––––––––––––––––––\n");
     printRestaurant(match);
+}
+
+/**
+ * Called when the user wants to write a file to the knowledge base
+ * @param tree the knowledge base tree
+ * @param locationIndex the index tree for location
+ */ 
+void writeQueryProject2(BinaryTree* tree, BinaryTree* locationIndex ) {
+    char* filePath = (char *) malloc(150 * sizeof(char));
+    printf("Filename: ");
+    scanf(" %100[^\n]s", filePath);
+
+    // open the file in read mode
+    FILE *file;
+    if ((file = fopen(filePath, "r")) == NULL)
+    {
+        printf("Error opening file\n");
+        return;
+    }
+
+
+    Restaurant *current = malloc(sizeof(Restaurant));
+    createEmptyRestuarant(current);
+
+     // read in the file line by line
+    int lineSize = 255;
+    char *line = calloc(lineSize, sizeof(char));
+    int lineNum = 0;
+    while (fgets(line, lineSize, file))
+    {
+        //Case when we encounter the next restaurant
+        if (*line == '\n')
+        {
+            lineNum = 0;
+            Restaurant *temp = current;
+            insertInBTName(temp, tree);
+            insertInBTLocation(temp, locationIndex);
+            //insertInBTLocation(temp, tree);
+            //current = createEmptyRestuarant();
+            current = malloc(sizeof(Restaurant)); //To make the next restaurant
+            createEmptyRestuarant(current);
+        }
+        else
+        {
+            if (lineNum == 0)
+            {
+                // name
+                readName(current, line);
+                lineNum = 1;
+            }
+            else if (lineNum == 1)
+            {
+                // city
+                readCity(current, line);
+                lineNum = 2;
+            }
+            else if (lineNum == 2)
+            {
+                // category
+                readCategories(current, line);
+                lineNum = 3;
+            }
+            else if (lineNum == 3)
+            {
+                // open time
+                readTimes(current, line);
+                lineNum = 4;
+            }
+            else if (lineNum == 4)
+            {
+
+                // cost
+                readCost(current, line);
+                
+                lineNum = 5;
+            }
+            else if (lineNum == 5)
+            {
+                //rank
+                char *ptr3 = line;
+                current->rank = atof(ptr3);
+                lineNum = 6;
+            }
+            else if (lineNum == 6)
+            {
+                // reviewers
+                char *ptr4 = line;
+                current->reviewers = atoi(ptr4);
+                
+            }
+        }
+        free(line);
+        line = calloc(lineSize, sizeof(char));
+    }
+
+    // insert and free the final restaurant
+    insertInBTName(current, tree);
+    insertInBTLocation(current, locationIndex);
+    // free the last line
+    free(line);
+    free(filePath);
+
+    // close the file
+    fclose(file);
+
 }
 
 
