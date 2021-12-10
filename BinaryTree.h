@@ -100,4 +100,21 @@ BinaryTree* buildLocationIndex(BinaryTree* tree);
 extern void searchForCriteria(BinaryTree* tree, BinaryTree* locationIndex, int day, char* time, char* city, char** category, int numCategories, int cost, bool categoriesUsingDisjunctions);
 
 
+/**Find restaurant in the main tree
+ * @param tree the three we would like to search for the restaurant in
+ * @param name the name of the restaurant that we are searching for
+ * @param city the location of the restaurant that we are searching for
+ * @return the Restaurant node that has been found
+ */
+Restaurant* findRestaurantName(BinaryTree* tree, char* name, char* location);
+
+
+/**Find restaurant in the locationIndex
+ * @param tree the three we would like to search for the restaurant in
+ * @param name the name of the restaurant that we are searching for
+ * @param city the location of the restaurant that we are searching for
+ * @return the Restaurant node that has been found
+ */
+Restaurant* findRestaurantLocation(BinaryTree* tree, char* name, char* location);
+
 #endif

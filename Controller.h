@@ -121,6 +121,19 @@ extern void searchQueryProject2(BinaryTree* tree, BinaryTree* locationIndex);
  */ 
 extern void addQueryProject2(BinaryTree* tree, BinaryTree* locationIndex);
 
+
+/**
+ * Called when the user wants to modify a restaurant in the knowledge base
+ * @param tree the knowledge base tree
+ */ 
+extern void modifyQueryProject2(BinaryTree* tree);
+
+/**
+ * Called when the user wants to see information about a restaurant in the knowledge base
+ * @param tree the knowledge base tree
+ */ 
+extern void matchQueryProject2(BinaryTree* tree);
+
 /**
  * Given a category query, parse it and add the category array to the Query object
  * Helper to searchQuery

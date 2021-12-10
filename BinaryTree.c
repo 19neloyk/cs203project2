@@ -177,3 +177,68 @@ void insertInBTLocation(Restaurant* r, BinaryTree* tree) {
 
     return;
 }
+
+/**
+ * @param tree the three we would like to search for hte restaurant in
+ * @param name the name of the restaurant that we are searching for
+ * @param city the location of the restaurant that we are searching for
+ * @return the Restaurant node that has been found
+ */
+Restaurant* findRestaurantName(BinaryTree* tree, char* name, char* city) {
+
+
+    BTNode* cur = tree->root;
+
+    if (cur == NULL) {
+        return NULL;
+    }
+
+    while (cur != NULL) {
+        Restaurant* curRest = cur->rest;
+        char* curName = curRest->name;
+        char* curCity = curRest->city;
+        if (strcmp(name, curName) <= 0) {
+            if (strcmp(city, curCity) == 0 ) {
+                return  curRest;
+            }
+            cur = cur->left;
+        } else {
+            cur = cur->right;
+        }
+    }
+
+    //No restaurant found
+    return NULL;
+}
+
+
+/**
+ * @param tree the three we would like to search for hte restaurant in
+ * @param name the name of the restaurant that we are searching for
+ * @param city the location of the restaurant that we are searching for
+ * @return the Restaurant node that has been found
+ */
+Restaurant* findRestaurantLocation(BinaryTree* tree, char* name, char* city) {
+    BTNode* cur = tree->root;
+
+    if (cur == NULL) {
+        return NULL;
+    }
+
+    while (cur != NULL) {
+        Restaurant* curRest = cur->rest;
+        char* curName = curRest->name;
+        char* curCity = curRest->city;
+        if (strcmp(city, curCity) <= 0) {
+            if (strcmp(name, curName) == 0 ) {
+                return  curRest;
+            }
+            cur = cur->left;
+        } else {
+            cur = cur->right;
+        }
+    }
+
+    //No restaurant found
+    return NULL;
+}

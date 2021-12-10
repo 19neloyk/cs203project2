@@ -157,9 +157,15 @@ void processQueryProject2(char* query, BinaryTree* tree, BinaryTree* locationInd
     else if (strcmp(query, "a") == 0) {
         addQueryProject2(tree, locationIndex);
     }
+    else if (strcmp(query, "m") == 0) {
+        modifyQueryProject2(tree);
+    }
+    else if (strcmp (query, "e") == 0) {
+        matchQueryProject2(tree);
+    }
     else
     {
-        printf("Invalid command. Valid input: \np - print all restaurants\ns - search for a restaurant\nx - exit the program\na - add a restaurant\n");
+        printf("Invalid command. Valid input: \np - print all restaurants\ns - search for a restaurant\nx - exit the program\na - add a restaurant\nm – modify a restaurant specified by name and location\ne – print information of specified restaurant based on name and location\n");
     }
 }
 
@@ -443,6 +449,96 @@ void addQueryProject2(BinaryTree* tree, BinaryTree* locationIndex) {
     printf("Restaurant has been added!\nHere is the content:\n––––––––––––––––––––––––––––––––––\n");
     printRestaurant(toAdd);
 }
+
+/**
+ * Called when the user wants to modify a restaurant in the knowledge base
+ * @param tree the knowledge base tree
+ */ 
+extern void modifyQueryProject2(BinaryTree* tree){
+    Restaurant* modified = (Restaurant*) malloc (sizeof(Restaurant));
+    createEmptyRestuarant(modified);
+
+    int lineSize = 300;
+    char *line = (char*) malloc(sizeof(char) * 300);
+    printf("Name: ");
+    scanf(" %200[^\n]s", line);
+    readName(modified, line);
+
+    printf("City: ");
+    scanf(" %200[^\n]s", line);
+    readCity(modified, line);
+
+    printf("Categories: ");
+    scanf(" %200[^\n]s", line);
+    readCategories(modified, line);
+
+    printf("Times: ");
+    scanf(" %200[^\n]s", line);
+    readTimes(modified, line);
+
+    printf("Cost: ");
+    scanf(" %200[^\n]s", line);
+    readCost(modified, line);
+
+    printf("Rank: ");
+    scanf(" %200[^\n]s", line);
+    modified->rank = atof(line);
+
+    printf("Reviewers: ");
+    scanf(" %200[^\n]s", line);
+    modified->reviewers = atoi(line);
+
+    Restaurant* toBeModified = findRestaurantName(tree, modified->name, modified->city);
+
+    if (toBeModified == NULL) {
+        printf("Unfortunately, a restaurant with that name or location does not exist\n––––––––––––––––––––––––––––––––\n");
+        return;
+    }
+
+    setTime(toBeModified, modified->times);
+    setCategory(toBeModified, modified->category, modified->numCategory);
+    toBeModified->cost = modified->cost;
+    toBeModified->rank = modified->rank;
+    toBeModified->reviewers = modified->reviewers;
+
+    //Do not free modified right now or there will be errors
+
+    printf("Restaurant has been modified!\nHere is the content:\n––––––––––––––––––––––––––––––––––\n");
+    printRestaurant(toBeModified);
+}
+
+
+/**
+ * Called when the user wants to modify a restaurant in the knowledge base
+ * @param tree the knowledge base tree
+ */ 
+extern void matchQueryProject2(BinaryTree* tree){
+    Restaurant* model = (Restaurant*) malloc (sizeof(Restaurant));
+    createEmptyRestuarant(model);
+
+    int lineSize = 300;
+    char *line = (char*) malloc(sizeof(char) * 300);
+    printf("Name: ");
+    scanf(" %200[^\n]s", line);
+    readName(model, line);
+
+    printf("City: ");
+    scanf(" %200[^\n]s", line);
+    readCity(model, line);
+
+    Restaurant* match = findRestaurantName(tree, model->name, model->city);
+    if (match == NULL) {
+        printf("Unfortunately, a restaurant with that name or location does not exist\n––––––––––––––––––––––––––––––––\n");
+        return;
+    }
+
+    //Do not free modified right now or there will be errors
+    printf("Restaurant has been found!\nHere is the content:\n––––––––––––––––––––––––––––––––––\n");
+    printRestaurant(match);
+}
+
+
+
 
 
 
