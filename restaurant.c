@@ -327,17 +327,12 @@ bool isCategoryValid(Restaurant* r, char** categories, int numCategories, bool c
 
     //Case for disjunctions using "OR"
     if (categoriesUsingDisjunctions) {
-        printf("NEW–––––––\n");
         for (int i = 0; i < numCategories ; i ++) {
-            printf("%s ->", categories[i]);
             for (int j = 0 ; j < numRestCategories ; j ++) {
-                printf("%s  ", restCategories[j]);
-                printf(" with cmp val %d  ;", strcmp(categories[i], restCategories[j]) );
                 if (j == numRestCategories - 1) {
                     printf("\n");
                 }
                 if (strcmp(categories[i], restCategories[j]) == 0) {
-                    printf("YUHHHH\n");
                     return true;
                 }
             }
