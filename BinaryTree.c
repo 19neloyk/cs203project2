@@ -243,17 +243,6 @@ Restaurant* findRestaurantLocation(BinaryTree* tree, char* name, char* city) {
     return NULL;
 
 }
-
-/**
- * Remove a restaurant node from the main tree node (based on name)
- * @param root represents root of the current node we are exploring 
- * @param name name of the restaurant that we are looking for
- * @param location location of the restaurant that we are looking for
- */ 
-void removeNodeByNameBST(BinaryTree* tree, char* name, char* location) {
-    tree->root = removeNodeName(tree->root, name, location);
-}
-
 /**
  * Remove a restaurant node from the main tree node (based on name)
  * @param root represents root of the current node we are exploring 
@@ -266,10 +255,10 @@ BTNode* removeNodeName(BTNode* root, char* name, char* location) {
         return root;
     }
     //Traverse left subtree
-    if (compareRestaurantName(name, root->rest->name) < 0  || (compareRestaurantName(name, root->rest->name) == 0 && compareRestaurantLocation(location, root->rest->city) != 0)) {
+    if (strcmp(name, root->rest->name) < 0  || (strcmp(name, root->rest->name) == 0 && strcmp(location, root->rest->city) != 0)) {
         root->left = removeNodeName(root->left, name, location);
     //Traverse right subtree
-    } else if (compareRestaurantName(name, root->rest->name) > 0 || (compareRestaurantName(name, root->rest->name) == 0 && compareRestaurantLocation(location, root->rest->city) != 0)) {
+    } else if (strcmp(name, root->rest->name) > 0 || (strcmp(name, root->rest->name) == 0 && strcmp(location, root->rest->city) != 0)) {
         root->right = removeNodeName(root->right, name, location);
 
     //Case where there is a match; removal happens
@@ -297,26 +286,26 @@ BTNode* removeNodeName(BTNode* root, char* name, char* location) {
             underSuccessor = underSuccessor->left;
         }
 
-        //Now the correct values for aboveSuccessor, successor, and underSuccessor are present
-        //We now remove successor (which by construction of our loop is a leaf) 
+        // Now the correct values for aboveSuccessor, successor, and underSuccessor are present
+        // We now remove successor (which by construction of our loop is a leaf, so it is 
+        // really not so complicated) 
         aboveSuccessor->left = NULL;
         successor->right = root->right;
         root = successor;
         return root;
     }
+    return root;
 }
 
-
 /**
- * Remove a restaurant node from the index location tree node (based on location)
+ * Remove a restaurant node from the main tree node (based on name)
  * @param root represents root of the current node we are exploring 
  * @param name name of the restaurant that we are looking for
  * @param location location of the restaurant that we are looking for
  */ 
-void removeNodeByLocationBST(BinaryTree* locationIndex, char* name, char* location) {
-    locationIndex->root = removeNodeLocation(locationIndex->root, name, location);
+void removeNodeByNameBST(BinaryTree* tree, char* name, char* location) {
+    tree->root = removeNodeName(tree->root, name, location);
 }
-
 
 
 
@@ -332,10 +321,10 @@ BTNode* removeNodeLocation(BTNode* root, char* name, char* location) {
         return root;
     }
     //Traverse left subtree
-    if (compareRestaurantLocation(name, root->rest->name) < 0  || (compareRestaurantLocation(name, root->rest->name) == 0 && compareRestaurantName(location, root->rest->city) != 0)) {
+    if (strcmp(name, root->rest->name) < 0  || (strcmp(name, root->rest->name) == 0 && strcmp(location, root->rest->city) != 0)) {
         root->left = removeNodeLocation(root->left, name, location);
     //Traverse right subtree
-    } else if (compareRestaurantLocation(name, root->rest->name) > 0 || (compareRestaurantLocation(name, root->rest->name) == 0 && compareRestaurantName(location, root->rest->city) != 0)) {
+    } else if (strcmp(name, root->rest->name) > 0 || (strcmp(name, root->rest->name) == 0 && strcmp(location, root->rest->city) != 0)) {
         root->right = removeNodeLocation(root->right, name, location);
 
     //Case where there is a match; removal happens
@@ -370,4 +359,15 @@ BTNode* removeNodeLocation(BTNode* root, char* name, char* location) {
         root = successor;
         return root;
     }
+    return root;
+}
+
+/**
+ * Remove a restaurant node from the index location tree node (based on location)
+ * @param root represents root of the current node we are exploring 
+ * @param name name of the restaurant that we are looking for
+ * @param location location of the restaurant that we are looking for
+ */ 
+void removeNodeByLocationBST(BinaryTree* locationIndex, char* name, char* location) {
+    locationIndex->root = removeNodeLocation(locationIndex->root, name, location);
 }
