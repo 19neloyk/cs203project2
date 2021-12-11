@@ -139,7 +139,14 @@ extern void matchQueryProject2(BinaryTree* tree);
  * @param tree the knowledge base tree
  * @param locationIndex the index tree for location
  */ 
-void writeQueryProject2(BinaryTree* tree, BinaryTree* locationIndex);
+extern void writeQueryProject2(BinaryTree* tree, BinaryTree* locationIndex);
+
+/**
+ * Called when the user wants to remove a file from the knowledge base
+ * @param tree the knowledge base tree
+ * @param locationIndex the index tree for location
+ */ 
+extern void removeQueryProject2(BinaryTree* tree, BinaryTree* locationIndex);
 
 /**
  * Given a category query, parse it and add the category array to the Query object

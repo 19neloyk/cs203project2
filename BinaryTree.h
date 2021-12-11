@@ -59,20 +59,6 @@ void insertInBTName(Restaurant* r, BinaryTree* tree);
 void insertInBTLocation(Restaurant* r, BinaryTree* tree);
 
 /**
- * Remove element from binary tree lexicographically based on name
- * @param r pointer to restaraunt to remove from the tree
- * @param tree the tree we would like to remove from
-*/
-void removeFromBTName(Restaurant* r, BinaryTree* tree);
-
-/**
- * Remove element from binary tree lexicographically based on location
- * @param r pointer to restaraunt to remove from the tree
- * @param tree the tree we would like to remove from
-*/
-void removeFromBTLocation(Restaurant* r, BinaryTree* tree);
-
-/**
  * Print BT in order
  * @param tree the tree we would like to print
  */
@@ -116,5 +102,22 @@ Restaurant* findRestaurantName(BinaryTree* tree, char* name, char* location);
  * @return the Restaurant node that has been found
  */
 Restaurant* findRestaurantLocation(BinaryTree* tree, char* name, char* location);
+
+
+/**
+ * Remove a restaurant node from the main tree node (based on name)
+ * @param root represents root of the current node we are exploring 
+ * @param name name of the restaurant that we are looking for
+ * @param location location of the restaurant that we are looking for
+ */ 
+void removeNodeByNameBST(BinaryTree* tree, char* name, char* location);
+
+/**
+ * Remove a restaurant node from the location index tree node (based on location)
+ * @param root represents root of the current node we are exploring 
+ * @param name name of the restaurant that we are looking for
+ * @param location location of the restaurant that we are looking for
+ */ 
+void removeNodeByLocationBST(BinaryTree* tree, char* name, char* location);
 
 #endif

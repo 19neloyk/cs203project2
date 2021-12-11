@@ -166,9 +166,12 @@ void processQueryProject2(char* query, BinaryTree* tree, BinaryTree* locationInd
     else if (strcmp (query, "w") == 0) {
         writeQueryProject2(tree, locationIndex);
     }
+    else if (strcmp (query, "r") == 0) {
+        removeQueryProject2(tree, locationIndex);
+    }
     else
     {
-        printf("Invalid command. Valid input: \np - print all restaurants\ns - search for a restaurant\nx - exit the program\na - add a restaurant\nm – modify a restaurant specified by name and location\ne – print information of specified restaurant based on name and location\n");
+        printf("Invalid command. Valid input: \np - print all restaurants\ns - search for a restaurant\nx - exit the program\na - add a restaurant\nm – modify a restaurant specified by name and location\ne – print information of specified restaurant based on name and location\nw – write another file's restaurants to this database\nr – remove a restaurant from the database specified by name and location\n");
     }
 }
 
@@ -516,6 +519,7 @@ extern void modifyQueryProject2(BinaryTree* tree){
  * @param tree the knowledge base tree
  */ 
 extern void matchQueryProject2(BinaryTree* tree){
+    //Create a model restaurant to use as querying information
     Restaurant* model = (Restaurant*) malloc (sizeof(Restaurant));
     createEmptyRestuarant(model);
 
@@ -647,7 +651,30 @@ void writeQueryProject2(BinaryTree* tree, BinaryTree* locationIndex ) {
 
 
 
+/**
+ * Called when the user wants to remove a file from the knowledge base
+ * @param tree the knowledge base tree
+ * @param locationIndex the index tree for location
+ */ 
+void removeQueryProject2(BinaryTree* tree, BinaryTree* locationIndex) {
+    //Create a model restaurant to use as querying information
+    Restaurant* model = (Restaurant*) malloc (sizeof(Restaurant));
+    createEmptyRestuarant(model);
 
+    int lineSize = 300;
+    char *line = (char*) malloc(sizeof(char) * 300);
+    printf("Name: ");
+    scanf(" %200[^\n]s", line);
+    readName(model, line);
+
+    printf("City: ");
+    scanf(" %200[^\n]s", line);
+    readCity(model, line);
+
+    removeNodeByNameBST(tree, model->name, model->city);
+    removeNodeByLocationBST(locationIndex, model->name, model->city);
+    printf("Removal process has successfully completed\n");
+}
 
 
 /**

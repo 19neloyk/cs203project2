@@ -241,4 +241,133 @@ Restaurant* findRestaurantLocation(BinaryTree* tree, char* name, char* city) {
 
     //No restaurant found
     return NULL;
+
+}
+
+/**
+ * Remove a restaurant node from the main tree node (based on name)
+ * @param root represents root of the current node we are exploring 
+ * @param name name of the restaurant that we are looking for
+ * @param location location of the restaurant that we are looking for
+ */ 
+void removeNodeByNameBST(BinaryTree* tree, char* name, char* location) {
+    tree->root = removeNodeName(tree->root, name, location);
+}
+
+/**
+ * Remove a restaurant node from the main tree node (based on name)
+ * @param root represents root of the current node we are exploring 
+ * @param name name of the restaurant that we are looking for
+ * @param location location of the restaurant that we are looking for
+ * @return value of root node
+ */ 
+BTNode* removeNodeName(BTNode* root, char* name, char* location) {
+    if (root == NULL) {
+        return root;
+    }
+    //Traverse left subtree
+    if (compareRestaurantName(name, root->rest->name) < 0  || (compareRestaurantName(name, root->rest->name) == 0 && compareRestaurantLocation(location, root->rest->city) != 0)) {
+        root->left = removeNodeName(root->left, name, location);
+    //Traverse right subtree
+    } else if (compareRestaurantName(name, root->rest->name) > 0 || (compareRestaurantName(name, root->rest->name) == 0 && compareRestaurantLocation(location, root->rest->city) != 0)) {
+        root->right = removeNodeName(root->right, name, location);
+
+    //Case where there is a match; removal happens
+    } else {
+        //Case with one or zero child nodes
+        if (root->left == NULL) {
+            BTNode* temp = root->right;
+            //Destroy the node here >>>
+            return temp;
+        }
+        else if (root->right == NULL) {
+            BTNode* temp = root->left;
+            //Destroy the node here >>>
+            return temp;
+        }
+
+        //Node with two children
+        //We have to get the minimum element on the right subtree
+        BTNode* aboveSuccessor = root;
+        BTNode* successor = root->right;
+        BTNode* underSuccessor = successor-> left;
+        while (underSuccessor != NULL) {
+            aboveSuccessor = successor;
+            successor = underSuccessor;
+            underSuccessor = underSuccessor->left;
+        }
+
+        //Now the correct values for aboveSuccessor, successor, and underSuccessor are present
+        //We now remove successor (which by construction of our loop is a leaf) 
+        aboveSuccessor->left = NULL;
+        successor->right = root->right;
+        root = successor;
+        return root;
+    }
+}
+
+
+/**
+ * Remove a restaurant node from the index location tree node (based on location)
+ * @param root represents root of the current node we are exploring 
+ * @param name name of the restaurant that we are looking for
+ * @param location location of the restaurant that we are looking for
+ */ 
+void removeNodeByLocationBST(BinaryTree* locationIndex, char* name, char* location) {
+    locationIndex->root = removeNodeLocation(locationIndex->root, name, location);
+}
+
+
+
+
+/**
+ * Remove a restaurant node from the index location tree node (based on location)
+ * @param root represents root of the current node we are exploring 
+ * @param name name of the restaurant that we are looking for
+ * @param location location of the restaurant that we are looking for
+ * @return value of root node
+ */ 
+BTNode* removeNodeLocation(BTNode* root, char* name, char* location) {
+    if (root == NULL) {
+        return root;
+    }
+    //Traverse left subtree
+    if (compareRestaurantLocation(name, root->rest->name) < 0  || (compareRestaurantLocation(name, root->rest->name) == 0 && compareRestaurantName(location, root->rest->city) != 0)) {
+        root->left = removeNodeLocation(root->left, name, location);
+    //Traverse right subtree
+    } else if (compareRestaurantLocation(name, root->rest->name) > 0 || (compareRestaurantLocation(name, root->rest->name) == 0 && compareRestaurantName(location, root->rest->city) != 0)) {
+        root->right = removeNodeLocation(root->right, name, location);
+
+    //Case where there is a match; removal happens
+    } else {
+        //Case with one or zero child nodes
+        if (root->left == NULL) {
+            BTNode* temp = root->right;
+            //Destroy the node here >>>
+            return temp;
+        }
+        else if (root->right == NULL) {
+            BTNode* temp = root->left;
+            //Destroy the node here >>>
+            return temp;
+        }
+
+        //Node with two children
+        //We have to get the minimum element on the right subtree
+        BTNode* aboveSuccessor = root;
+        BTNode* successor = root->right;
+        BTNode* underSuccessor = successor-> left;
+        while (underSuccessor != NULL) {
+            aboveSuccessor = successor;
+            successor = underSuccessor;
+            underSuccessor = underSuccessor->left;
+        }
+
+        //Now the correct values for aboveSuccessor, successor, and underSuccessor are present
+        //We now remove successor (which by construction of our loop is a leaf) 
+        aboveSuccessor->left = NULL;
+        successor->right = root->right;
+        root = successor;
+        return root;
+    }
 }
