@@ -1,11 +1,21 @@
 #include "BinaryTree.h"
 
+/**
+ * Creates a binary tree (deals with malloc)
+ * @return a binary tree
+ */
 BinaryTree* createBT() {
     BinaryTree* tree = (BinaryTree*) malloc(sizeof(BinaryTree));
     tree->root = NULL;
     return tree;
 }
 
+
+/**
+ * Creates a binary tree node (deals with malloc)
+ * @param r the restaurant we want to create a node of
+ * @return the new node
+ */
 BTNode* createBTNode(Restaurant* r) {
     BTNode* node = (BTNode*) malloc(sizeof(BTNode));
     node->rest = r;
@@ -14,6 +24,7 @@ BTNode* createBTNode(Restaurant* r) {
     return node;
 } 
 
+//Recursively helps with printing the BinaryTree
 void printBTHelper(BTNode* node) {
     if (node->left != NULL) {
         printBTHelper(node->left);    
@@ -49,7 +60,11 @@ void buildLocationIndexHelper(BinaryTree* locationIndex, BTNode* node) {
     }
 }
 
-
+/**
+ * Build location index as BinaryTree
+ * @param tree the knowledge base tree we build out from
+ * @return the tree that represents the location indexing structure
+ */
 BinaryTree* buildLocationIndex(BinaryTree* tree) {
     BinaryTree* locationIndex = createBT();
     if (tree->root != NULL) {
@@ -111,7 +126,11 @@ int compareRestaurantLocation(Restaurant* a, Restaurant* b) {
 }
 
 
-
+/**
+* Insert element into binary tree lexicographically based on name
+* @param r pointer to restaraunt to insert into the tree
+* @param tree the tree we would like to insert into
+*/
 void insertInBTName(Restaurant* r, BinaryTree* tree) {
     BTNode* newNode = createBTNode(r);
 
@@ -145,7 +164,11 @@ void insertInBTName(Restaurant* r, BinaryTree* tree) {
     return;
 }
 
-
+/**
+* Insert element into binary tree lexicographically based on location
+* @param r pointer to restaraunt to insert into the tree
+* @param tree the tree we would like to insert into
+*/
 void insertInBTLocation(Restaurant* r, BinaryTree* tree) {
     BTNode* newNode = createBTNode(r);
 

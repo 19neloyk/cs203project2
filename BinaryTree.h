@@ -34,12 +34,14 @@ typedef struct BinaryTree_struct{
 
 /**
  * Creates a binary tree (deals with malloc)
+ * @return a binary tree
  */
 BinaryTree* createBT();
 
 /**
  * Creates a binary tree node (deals with malloc)
  * @param r the restaurant we want to create a node of
+ * @return the new node
  */
 BTNode* createBTNode(Restaurant* r);
 
@@ -95,7 +97,7 @@ extern void searchForCriteria(BinaryTree* tree, BinaryTree* locationIndex, int d
 Restaurant* findRestaurantName(BinaryTree* tree, char* name, char* location);
 
 
-/**Find restaurant in the locationIndex
+/** Find restaurant in the locationIndex
  * @param tree the three we would like to search for the restaurant in
  * @param name the name of the restaurant that we are searching for
  * @param city the location of the restaurant that we are searching for
